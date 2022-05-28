@@ -1,28 +1,502 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Source originally taken from Jon Barron (cs.berkeley.edu/barron)-->
 <html>
+  <head>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    }
+    .two
+    {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="images/myphoto.jpg">
+  <title>Masudul Hassan Quraishi</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+          <name>Masudul Hassan Quraishi</name>
+        </p>
+        <p>I'm currently a Computer Engineering PhD Student working with <a href="https://isearch.asu.edu/profile/2436287">Professor Fengbo Ren</a> at <a href="https://ren-fengbo.lab.asu.edu/">PSCLab, Arizona State University.</a>
+        My research is focused on developing an ethernet-based standalone accelerator protocol for FPGA for extreme-scale high performance computing.</p>
 
-<body style= "background-color:white">
+        <p>
+          I received my Masters in Computer Engineering in May 2020 from Arizona State University, Tempe, Arizona.
+          I have worked on hardware-software co-design and co-simulation at <a href="https://acims.asu.edu//">ACIMS, Arizona State University.</a>
+        </p>
+        <p>
+          I received my B.Sc. in Electrical and Electronic Engineering from <a href="https://eee.buet.ac.bd/">Bangladesh University of Engineering and Technology.</a>
+          I have worked at <a href="http://www.baec.gov.bd/">Bangladesh Atomic Energy Commission</a> on developing a radiation monitoring tool using LabVIEW.
+         </p>
+        <p align=center>
+          <a href="mailto:mquraish@asu.edu">Email</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?user=CJtJbNAAAAAJ&hl">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/mhquraishi">LinkedIn </a>
+        </p>
+        </td>
+        <td width="33%">
+            <img src="images/myphoto.jpg" alt="image" width="240">
+        </td>
+      </tr>
+      </table>
+      <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <td width="100%" valign="middle">
+          <heading>Research Overview</heading>
+          <p>
+          I'm interested in all things related to the design of VLSI systems,
+          from transistors to CAD. With the end of Moore's law in sight,
+          advances in computing performance and energy effiency must
+          increasingly come from innovations above the process technology. In
+          an effort to make hardware design more accessible, my research
+          studies new FPGA-accelerated simulation (colloquially, hardware emulation) to help designers
+          verify and validate their systems easily using relatively inexpensive
+          FPGAs-in-the-cloud (<a href="https://aws.amazon.com/ec2/instance-types/f1/">AWS EC2 F1</a>).
+          </p>
 
-<h1 style="text-align:center;">
+          <p>
+          I'm a maintainer of the <a href=https://fires.im/>FireSim</a> project,
+          which builds FPGA-based hardware emulators
+          of RISCV-based systems spanning single SoCs to warehouse-scale
+          computers. My work focusses on the hardware compiler at the heart of
+          FireSim, called Golden Gate (MIDAS II).
+          Golden Gate generates bit- and cycle-exact models from ASIC RTL, and
+          provides additional tooling to support deterministic software co-simulation of
+          parts of the simulator where an FPGA-hosted model is not required.
+          </p>
 
-Welcome to Masudul Quraishi's Webpage!
-</h1>
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Refereed Publications</heading>
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+          <td width="25%"><img src="images/firesim-micro21.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+          <a href="papers/firesim-micro21.pdf" id="ICCAD19">
+              <papertitle>Accessible, FPGA Resource-Optimized Simulation of Multi-Clock Systems in FireSim</papertitle>
+          </a>
+          <br>
+          <strong>David T. Biancolin</strong>,
+          <a href="https://people.eecs.berkeley.edu/~magyar">Albert Magyar</a>,
+          <a href="https://sagark.org/">Sagar Karandikar</a>,
+          <a href="https://people.eecs.berkeley.edu/~alonamid/">Alon Amid</a>,
+          <a href="https://people.eecs.berkeley.edu/~bora/">Bora Nikolic</a>,
+          <a href="https://www.eecs.berkeley.edu/~jrb/">Jonathan Bachrach</a>,
+          <a href="https://www.cs.berkeley.edu/~krste">Krste Asanovi&cacute;</a>
+          <br>
+            <em>IEEE MICRO Special Edition on FPGAs in Computing</em>, 2021<br>
+          </p>
+          <p>
+          Here we explore two developments in FireSim: support for multi-clock
+          target systems and more advanced resource optimizations. Of
+          particular note is instance multithreading which can enable up to an
+          8x increase in single FPGA capacity.  This publication serves as
+          teaser for Albert Magyar's and my own dissertation work.
+          </p>
+          </td>
+      </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr bgcolor="#ffffd0">
+          <td width="25%"><img src="images/goldengate-iccad19.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+          <a href="papers/goldengate-iccad19.pdf" id="ICCAD19">
+              <papertitle>Golden Gate: Bridging The Resource-Efficiency Gap Between ASICs and FPGA Prototypes</papertitle>
+          </a>
+          <br>
+          <a href="https://people.eecs.berkeley.edu/~magyar">Albert Magyar</a>,
+          <strong>David T. Biancolin</strong>,
+          <a href="https://bar.eecs.berkeley.edu/people/koenig_jack.html">Jack Koenig</a>,
+          <a href="https://www.eecs.berkeley.edu/~sseshia/">Sanjit Seshia</a>,
+          <a href="https://www.eecs.berkeley.edu/~jrb/">Jonathan Bachrach</a>,
+          <a href="https://www.cs.berkeley.edu/~krste">Krste Asanovi&cacute;</a>
+          <br>
+            <em>International Conference On Computer Aided Design</em>, 2019<br>
+            <a href="slides/golden-gate-iccad19.pptx">Slides (PPTX, 17 MB)</a> /
+            <a href="slides/golden-gate-iccad19.pdf">Slides (PDF, 7 MB)</a> /
+            <a href="https://github.com/firesim/firesim/tree/dev/sim/midas">Source (in FireSim)</a>
+          </p>
+          <p>
+          We present Golden Gate (MIDAS II): the first
+          <i>optimizing</i> FPGA-accelerated simulator compiler. By replacing
+          multi-ported register files with a BRAM-based model,
+          Golden Gate enabled us to fit six cores on an FPGA that could only
+          fit four previously. We also present LIME, a bounded model-checking flow
+          to verify that the optimized simulator is faithful to the source RTL.
+          </p>
+          </td>
+      </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+          <td width="25%"><img src="images/fased-fpga19.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+          <a href="papers/fased-fpga19.pdf"  id="FPGA19">
+              <papertitle>FASED: FPGA-Accelerated Simulation and Evaluation of DRAM</papertitle>
+          </a>
+          <br>
+          <strong>David T. Biancolin</strong>,
+          <a href="https://sagark.org/">Sagar Karandikar</a>,
+          <a href="https://people.eecs.berkeley.edu/~dgkim/index.html">Donggyu Kim</a>,
+          <a href="https://bar.eecs.berkeley.edu/people/koenig_jack.html">Jack Koenig</a>,
+          <a href="https://www.eecs.berkeley.edu/~waterman/">Andrew Waterman</a>,
+          <a href="https://www.eecs.berkeley.edu/~jrb/">Jonathan Bachrach</a>,
+          <a href="https://www.cs.berkeley.edu/~krste">Krste Asanovi&cacute;</a>
+          <br>
+            <em>ACM/SIGDA International Symposium on Field-Programmable Architectures</em>, 2019<br>
+            <a href="slides/fased-fpga19.pptx">Slides (PPTX, 7.2 MB)</a> /
+            <a href="bib/fased-fpga19.bib">BibTeX</a> /
+            <a href="https://github.com/firesim/firesim/tree/master/sim/midas/src/main/scala/midas/models/dram">Source (in FireSim)</a>
+          </p>
+          <p>
+          In this paper we present FASED, the generator of high-fidelity,
+          reconfigurable, FPGA-hosted, last-level-cache and DRAM timing models
+          used in FireSim.
+          </p>
+          </td>
+      </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+          <td width="25%"><img src="images/dessert-fpl18.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+          <a href="papers/dessert-fpl18.pdf"  id="ISCA18">
+              <papertitle>DESSERT: Debugging RTL Effectively with State Snapshotting for Error Replays across Trillions of cycles</papertitle>
+            </a>
+            <br>
+          <a href="https://people.eecs.berkeley.edu/~dgkim/index.html">Donggyu Kim</a>,
+          <a href=https://people.eecs.berkeley.edu/~celio/>Chris Celio</a>,
+          <a href="https://sagark.org/">Sagar Karandikar</a>,
+          <strong>David T. Biancolin</strong>,
+          <a href="https://www.eecs.berkeley.edu/~jrb/">Jonathan Bachrach</a>,
+          <a href="https://www.cs.berkeley.edu/~krste">Krste Asanovi&cacute;</a>
+          <br>
+            <em>The International Conference on Field-Programmable Logic and Applications (FPL)</em>, 2018<br>
+          </p>
+          <p>
+          Augmenting MIDAS, DESSERT introduces two mechanisms for bug detection:
+          assertion synthesis and online golden-model checking. Using a
+          techinque we call ganged simulation, DESSERT runs two simulations in
+          parallel, one running ahead of the other, to capture a
+          full-visibility waveform of the design before the bug manifests
+          without simulation slowdown.
+          </p>
+          </td>
+      </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr bgcolor="#ffffd0">
+          <td width="25%"><img src="images/firesim-isca18.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+          <a href="papers/firesim-isca18.pdf"  id="ISCA18">
+              <papertitle>FireSim: FPGA-Accelerated Cycle-Exact Scale-Out System Simulation in the Public Cloud</papertitle>
+            </a>
+            <br>
+          <a href="https://sagark.org/">Sagar Karandikar</a>,
+          <a href="https://zhehaomao.com/">Howard Mao</a>,
+          <a href="https://people.eecs.berkeley.edu/~dgkim/index.html">Donggyu Kim</a>,
+          <strong>David T. Biancolin</strong>,
+          <a href="https://people.eecs.berkeley.edu/~alonamid/">Alon Amid</a>,
+          <a href="https://dayeol.github.io/">Dayeol Lee</a>,
+          <a href="https://people.eecs.berkeley.edu/~nathanp/">Nathan Pemberton</a>,
+          Emmanuel Amaro,
+          <a href="https://people.eecs.berkeley.edu/~colins/">Colin Schmidt</a>,
+          <a href="http://adichopra.com/">Aditya Chopra</a>,
+          Qijing Huang,
+          Kyle Kovacs,
+          <a href="https://people.eecs.berkeley.edu/~bora/">Bora Nikolic</a>,
+          <a href="http://bnrg.eecs.berkeley.edu/~randy/">Randy Katz</a>,
+          <a href="https://www.eecs.berkeley.edu/~jrb/">Jonathan Bachrach</a>,
+          <a href="https://www.cs.berkeley.edu/~krste">Krste Asanovi&cacute;</a>
+          <br>
+            <em>International Symposium on Computer Architecture (ISCA)</em>, 2018<br>
+            <b>Selected as one of IEEE Micro's "Top Picks from Computer Architecture Conferences, 2018"</b><br>
+            <a href="https://fires.im/">Project Page</a> /
+            <a href="https://sagark.org/assets/pubs/firesim-isca2018.bib.txt">BibTeX</a> /
+            <a href="https://github.com/firesim/firesim">Source</a>
+          </p>
+          <p>
+          FireSim is a cycle-exact, FPGA-accelerated, scale-out computer system
+          simulation platform. The FPGA-hosted components of a FireSim
+          simulator are generated using MIDAS, which transforms
+          Rocket Chip-generated RTL to produce the nodes of the system.
+          </p>
+          </td>
+        </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="25%"><img src="images/carrv17.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+          <a href="papers/carrv17.pdf"  id="CARRV17">
+            <papertitle>Evaluation of RISC-V RTL with FPGA-Accelerated Simulation</papertitle>
+            </a>
+            <br>
+          <a href="https://people.eecs.berkeley.edu/~dgkim/index.html">Donggyu Kim</a>,
+          <a href=https://people.eecs.berkeley.edu/~celio/>Chris Celio</a>,
+          <strong>David T. Biancolin</strong>,
+          <a href="https://www.eecs.berkeley.edu/~jrb/">Jonathan Bachrach</a>,
+          <a href="https://www.cs.berkeley.edu/~krste">Krste Asanovi&cacute;</a>
+          <br>
+            <em>Workshop on Computer Architecture Research with RISC-V (CARRV)</em>, 2017<br>
+            <a href="bib/carrv17.bib">BibTeX</a> /
+            <a href="https://github.com/ucb-bar/midas">Source</a>
+          </p>
+          <p> The first public demonstration of MIDAS. MIDAS builds on the work
+             of <a
+                 href="http://ieeexplore.ieee.org/document/7551388/">Strober</a>:
+             it has been ported to Chisel3 and FIRRTL, and produces
+             FPGA-accelerated simulators that are tenfold faster. With the
+                 improved speed, we collect energy and performance results from
+                 both <a href="https://github.com/ucb-bar/riscv-boom">BOOM</a>
+                 and rocket-based processors generated by the Rocket Chip SoC
+                 Generator, as they run the SPEC2006int benchmark with
+                 reference inputs to completion.
+          </p>
+          </td>
+        </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="25%"><img src="images/arith17.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+            <a href="papers/arith17.pdf"  id="ARITH17">
+            <papertitle>A Hardware Accelerator for Computing an Exact Dot Product</papertitle>
+            </a>
+            <br>
+          <a href="https://bar.eecs.berkeley.edu/people/koenig_jack.html">Jack Koenig</a>,
+          <strong>David T. Biancolin</strong>,
+          <a href="https://www.eecs.berkeley.edu/~jrb/">Jonathan Bachrach</a>,
+          <a href="https://www.cs.berkeley.edu/~krste">Krste Asanovi&cacute;</a>
+          <br>
+            <em>IEEE International Symposium on Computer Arithmetic (ARITH)</em>, 2017<br>
+          </p>
+          <p> We study the implementation of a hardware accelerator, designed
+          in Chisel and hosted in a Rocket Chip-generated SoC, that computes a dot
+          product of IEEE-754 floating-point numbers exactly. The accelerator
+          uses a wide (640 or 4288 bits for single or double-precision
+          respectively) fixed-point representation into which intermediate
+          floating-point products are accumulated.</p>
+          </td>
+        </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="25%"><img src="images/trets16.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+            <a href="papers/trets16.pdf"  id="TRETS16">
+            <papertitle>Fine Grained Interconnect Synthesis</papertitle>
+            </a>
+            <br>
+          <a href="https://www.eecg.toronto.edu/~arod/">Alex Rodionov</a>, <strong>David T. Biancolin</strong>, <a href="https://www.eecg.toronto.edu/~jayar/">Jonathan Rose</a>
+          <br>
+            <em>ACM Transactions on Reconfigurable Technology and Systems (TRETS)</em>, 2016<br>
+            <b> TRETS 2016 Best Paper Award Winner </b><br>
+            <a href="https://www.eecg.toronto.edu/~jayar/software/GENIE/">Project Page</a> /
+            <a href="bib/trets16.bib">BibTeX</a> /
+            <a href="https://bitbucket.org/arod/genie">Source</a>
+          </p>
+          <p>
+          Here we present an update of our GENIE paper originally presented at FPGA2015.
+          </p>
+          </td>
+        </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="25%"><img src="JITPCB.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+            <a href="papers/JITPCB.pdf"  id="JITPCB">
+            <papertitle>JITPCB</papertitle>
+            </a>
+            <br>
+            <a href="https://www.eecs.berkeley.edu/~jrb/">Jonathan Bachrach</a>, <strong>David T. Biancolin</strong>, Austin Buchan, Duncan Haldane and Richard Lin
+            <br>
+            <em>IEEE/RSJ International Conference on Intelligent Robots and Systems</em>, 2016<br>
+            <a href="bib/jitpcb.bib">BibTeX</a> /
+            <a href="https://ieeexplore.ieee.org/document/7759349/">IEEE Xplore</a>
+          </p>
+          <p>
+          Commercialization of desktop milling machines has made rapid Printed
+          Circuit Board (PCB) fabrication accessible. Unfortunately, PCB design
+          for embedded and robotic systems is still a tedious and time
+          consuming activity. In this paper, we present a technique, Just In
+          Time Printed Circuit Board (JITPCB) for designing PCB systems at
+          speeds commensurate with the capability of desktop PCB milling
+          machines.
+          </p>
+          </td>
+        </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="25%"><img src="fpga2015.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+            <a href="papers/rodionovfpga15.pdf"  id="FPGA2015">
+            <papertitle>Fine Grained Interconnect Synthesis</papertitle>
+            </a>
+            <br>
+          <a href="https://www.eecg.toronto.edu/~arod/">Alex Rodionov</a>, <strong>David T. Biancolin</strong>, <a href="https://www.eecg.toronto.edu/~jayar/">Jonathan Rose</a>
+          <br>
+            <em>ACM/SIGDA International Symposium on Field-Programmable Architectures</em>, 2015<br>
+            <a href="https://www.eecg.toronto.edu/~jayar/software/GENIE/">Project Page</a> /
+            <a href="bib/FPGA2015.bib">BibTeX</a> /
+            <a href="https://bitbucket.org/arod/genie">Source</a>
+          </p>
+          <p>
+            We present GENIE, a tool to generate optimized FPGA interconnect at
+            finer granularity of design&mdash;just above the pipeline level&mdash;than
+            commercial system integration tools like Altera's QSYS. <br><br>
+            This paper is subsumed by our 2016 TRETS paper.
+          </p>
+          </td>
+        </tr>
 
-<p>
-    Hi everyone, my name is Masudul Quraishi. 
-    I was born and spent most of my life so far in Dhaka, Bangladesh. 
-    I am currently pursuing my Ph.D. in Computer Engineering at Arizona State University. 
-    I am working as a research assistant at the Parallel Systems and Computing Laboratory (PSCLab) with Professor Fengbo Ren. 
-    My current research area is focused on the virtualization of FPGA devices for high-performance computing. I love to travel, hike, and cook during my free time. 
-</p>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Berkeley Technical Reports</heading>
+        </td>
+      </tr>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="25%"><img src="rocketchip.png" alt="PontTuset" width="180" style="border-style: none">
+          <td width="75%" valign="top">
+          <p>
+            <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-17.pdf"  id="rocketchip">
+            <papertitle>The Rocket Chip Generator</papertitle>
+            </a>
+            <br>
+            <a href="https://www.cs.berkeley.edu/~krste">Krste Asanovi&cacute;</a>, <a href="http://bar.eecs.berkeley.edu/">BAR</a>, and many more still.
+            <br>
+            <em>Berkeley Technical Report EECS-2016-17</em><br>
+            <a href="https://bar.eecs.berkeley.edu/projects/2014-rocket_chip.html">Project Page</a> /
+            <a href="bib/rocketchip.bib">BibTeX</a> /
+            <a href="https://github.com/ucb-bar/rocket-chip">Source</a>
+          <br>
+          </p>
+          <p>
+            Rocket Chip is an open-source System-on-Chip(SoC) design generator that emits synthesizable
+            RTL. It leverages the Chisel hardware construction language to compose a library of sophisticated
+            generators for cores, caches, and interconnects into an integrated SoC.
+          </p>
+          </td>
+        </tr>
 
-<img src= "myphoto.jpg" width = "120" height = "90"/>
+      <table width="101%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="35%">
+            <heading>Dissertation Progress</heading>
+            <p>
+            My dissertation work studied mechanisms for simulating digital
+            systems with multiple dynamically scaling clocks using
+            commercial-off-the-shelf FPGA platforms. I've preserved my
+            page-count progress from March 2020 to April 2021 here for posterity.
+            </p>
+            [Scripts courtesy Andrew Waterman]
+            <p>
+            </p>
+        </td>
+        <td width="65%">
+            <img src="shame.png" alt="PontTuset" width="450">
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+          <td width="100%" valign="middle">
+            <heading>About Me</heading>
+            <p>
+            In my free time I like to climb, hike, and ski. I love to ride
+            bikes, both on the road and on the trail. I used to race XC
+            mountain bikes with the <a href="http://mtnbike.sa.utoronto.ca/">University of Toronto Blues</a> and the
+            <a href="https://www.lapdogs.ca/">Lapdogs Cycling Club</a>. When not outdoors, I enjoy cooking for people
+            and learning new (natural) languages. I maintain this <a href="https://ankiweb.net/shared/info/1614370427">Anki Deck</a> for
+            Berkeley J1A and J1B students.
+        </td>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td>
+        <br>
+        <p align="right"><font size="2">
+          <a href="https://www.cs.berkeley.edu/~barron/">Appreciate the aesthetic? Wait 'til you see the original.</a>
+          </font>
+        </p>
+        </td>
+      </tr>
+      </table>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<p>
-<a href="https://www.linkedin.com/in/mhquraishi/">Link to my LinkedIn profile</a> 
+        ga('create', 'UA-73100935-1', 'auto');
+        ga('send', 'pageview');
 
-</p>
-
-<p>Click here to see <a href="resume.html">my resume</a>  </p>
-</body>
+      </script>
+    </td>
+    </tr> -->
+  </table>
+  </body>
 </html>
